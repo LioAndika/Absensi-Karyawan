@@ -1,0 +1,144 @@
+body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#login {
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.card{
+  background: rgb(255 255 255/ 0.5);
+  backdrop-filter: blur(50px);
+}
+
+@media (min-width: 375px) {
+  .card {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.nav .nav-item .nav-link {
+    color: black;
+}
+
+@media (min-width: 1024px) {
+  .nav .nav-item .nav-link {
+    color: white;
+  }
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+
+.hero-banner {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+nav{
+    background: rgb(255 255 255/ 0.1);
+    backdrop-filter: blur(50px);
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.input-container {
+  position: relative;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.input-container input[type="text"] {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9d2323;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container .label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #9d2323;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #333;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-container input[type="password"] {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9d2323;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-container input[type="password"]:focus ~ .label,
+.input-container input[type="password"]:valid ~ .label {
+  top: -20px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.input-container input[type="password"]:focus ~ .underline,
+.input-container input[type="password"]:valid ~ .underline {
+  transform: scaleX(1);
+}
+
+
